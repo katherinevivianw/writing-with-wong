@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/writing_with_wong_background.png);
+    background-position: center;
+    background-size: cover; 
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box; 
+    box-sizing: border-box;
+    position: relative; 
+}
+.navbar{
+    width: 100%;
+    height: 15vh; 
+    margin: auto; 
+    display: flex; 
+    align-items: center;
+}
+.logo{
+    width: 300px;
+    padding-top: 3%;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    padding-left: 60px;
+    padding-top: 2.5%;
+}
+nav ul li{
+    display: inline-block; 
+    list-style: none;
+    margin: 0px 20px; 
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+.content h1{
+    font-size: 60px;
+    font-weight: 100; 
+    margin-top: 24px; 
+    margin-bottom: 15px; 
+    color: #000000;
+}
+.content p{
+    font-size: 20px;
+    color: #000000;
+}
+.content{
+    margin-left: 5%;
+    margin-top: 10%;
+}
