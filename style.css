@@ -109,6 +109,9 @@ nav ul li a:hover::after{
     font-weight: 600;
     color: #000000;
 }
+.sub-title p span {
+    color: #E29492;
+}
 
 /************** FOOTER **************/
 .footer{
