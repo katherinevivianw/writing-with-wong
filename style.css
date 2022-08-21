@@ -82,18 +82,20 @@ nav ul li a:hover::after{
 
 /************** ABOUT **************/
 #about{
-    padding: 80px 0;
+    padding: 60px 0;
     color: #000000;
 }
 .row{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 /* edit image column of about section */
 .about-col-1{
     flex-basis: 35%;
+    width: 40%;
+    margin: 10px 60px; 
 }
 .about-col-1 img{
     width: 100%;
@@ -103,6 +105,7 @@ nav ul li a:hover::after{
 /* edit text column of about section */
 .about-col-2{
     flex-basis: 60%;
+    margin: 10px 0px;
 }
 .sub-title{
     font-size: 60px;
