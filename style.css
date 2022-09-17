@@ -254,6 +254,13 @@ form .button-solid:hover{
     transform: translateY(-5px);
 }
 
+/* submission message */
+#submission-msg{
+    color: #E29492;
+    margin-top: 5px;
+    display: block;
+}
+
 /************** FOOTER **************/
 .footer{
     width: 100%;

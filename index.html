@@ -103,12 +103,13 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Name" required>
-                        <input type="email" name="email" placeholder="Email" required> 
+                        <input type="email" name="Email" placeholder="Email" required> 
                         <textarea name="Message" rows="6" placeholder="Message"></textarea>
                         <button type="submit" class="button-solid">Submit</button>
                     </form>
+                    <span id="submission-msg"></span>
                 </div>
             </div>
         </div>
@@ -120,4 +121,25 @@
     </footer>
 
     </body>
+
+    <!--================ CONNECT CONTACT FORM TO GOOGLE SHEETS W/ APPS SCRIPT ================-->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw8pK1XU82z6dANgjwezWrslnhOcRwwgx02nUGd7BXEfAbIIPuvQ-MCySwOZtituv7v/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const submission_msg = document.getElementById("submission-msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                submission_msg.innerHTML = "Message successfully submitted!"
+                setTimeout(function(){
+                    submission_msg.innerHTML = ""
+                })
+            },5000) 
+            form.reset()
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
 </html>
