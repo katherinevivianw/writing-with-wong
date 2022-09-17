@@ -121,6 +121,7 @@ nav ul li a:hover::after{
 }
 .about-description{
     font-size: 12px;
+    text-align: justify;
 }
 .about-description span {
     color: #E29492
