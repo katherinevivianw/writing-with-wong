@@ -245,6 +245,11 @@ form .button-solid{
     display: inline-block;
     background: #E29492;
     border-radius: 15px;
+    transition: transform 0.5s;
+}
+form .button-solid:hover{
+    background: #FFD368;
+    transform: translateY(-5px);
 }
 
 /************** FOOTER **************/
