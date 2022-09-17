@@ -83,6 +83,9 @@ nav ul li a:hover::after{
     font-size: 20px;
 }
 
+/* add typing effect */
+
+
 /************** ABOUT **************/
 
 #about{
@@ -116,8 +119,11 @@ nav ul li a:hover::after{
     font-weight: 600;
     color: #000000;
 }
-.sub-title p span {
-    color: #E29492;
+.about-description{
+    font-size: 12px;
+}
+.about-description span {
+    color: #E29492
 }
 
 /************** SERVICES **************/
