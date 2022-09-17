@@ -85,7 +85,6 @@ nav ul li a:hover::after{
 
 /* add typing effect */
 
-
 /************** ABOUT **************/
 
 #about{
@@ -172,6 +171,20 @@ nav ul li a:hover::after{
 .services-list div:hover{
     background: #F9C7C6;
     transform: translateY(-10px);
+}
+
+/* add workshop image */
+.services-img{
+    display: block;
+    width: 650px;
+    height: auto;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.services-img-caption{
+    text-align: center;
+    margin-top: 5px;
 }
 
 /************** CONTACT **************/
