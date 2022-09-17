@@ -181,6 +181,7 @@ nav ul li a:hover::after{
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 15px;
 }
 .services-img-caption{
     text-align: center;
